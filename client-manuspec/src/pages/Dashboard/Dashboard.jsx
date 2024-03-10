@@ -20,9 +20,15 @@ function Dashboard() {
           </Link>
         </div>
         <div className="dashboard__cards">
-          <img className="dashboard__image" src={image1} alt="" />
-          <img className="dashboard__image" src={image2} alt="" />
-          <img className="dashboard__image" src={image3} alt="" />
+          <Link to={"/reports"}>
+            <img className="dashboard__image" src={image1} alt="" />
+          </Link>
+          <Link to={"/reports"}>
+            <img className="dashboard__image" src={image2} alt="" />
+          </Link>
+          <Link to={"/reports"}>
+            <img className="dashboard__image" src={image3} alt="" />
+          </Link>
         </div>
       </div>
       {/* <div className="dashboard__reports">

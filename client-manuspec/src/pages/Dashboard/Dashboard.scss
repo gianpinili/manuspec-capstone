@@ -11,6 +11,7 @@
 
   @include desktop {
     flex-direction: row;
+    margin-top: 6rem;
   }
 
   &__links {
@@ -27,7 +28,7 @@
     border-bottom: 2px solid black;
     font-size: 1.3rem;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     @include desktop {
       border-bottom: none;
