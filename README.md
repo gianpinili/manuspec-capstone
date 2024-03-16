@@ -41,7 +41,6 @@ This application aims to replace traditional paper-based methods in dealerships.
 - Server libraries:
   - knex
   - express
-  - bcrypt for password hashing
 
 ### APIs
 
@@ -49,9 +48,9 @@ This application aims to replace traditional paper-based methods in dealerships.
 
 ### Sitemap
 
-- Landing Page (Not signed in)
-  - Login
-- Dashboard (Signed in)
+- Landing Page
+  - Login (Sign in to use)
+- Dashboard
   - Create Report
     - Finished Report
   - List of Customer History
@@ -81,8 +80,54 @@ This application aims to replace traditional paper-based methods in dealerships.
 ![SelectedCustomer](./readme-images/selectedcustomer.png)
 
 ### Data
+![]()
 
 ### Endpoints
+
+<details>
+  <summary><code>GET /customers<code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+  </details>
+
+<details>
+  <summary><code>GET /customers/:customerId<code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+</details>
+<details>
+  <summary><code>GET /profile<code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+</details>
+<details>
+  <summary><code>POST /customers <code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+</details>
+<details>
+  <summary><code>POST /customers/:id<code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+</details>
+<details>
+  <summary><code>PUT /customers/:id<code><summary>
+
+  ##### Parameters
+
+  ##### Responses
+</details>
+
 
 ### Auth
 
@@ -96,11 +141,11 @@ This application aims to replace traditional paper-based methods in dealerships.
 
   - Express project with routing, with placeholder 200 responses
 
--
+- Create migrations
 
--
+- Create seeds with sample list of customers / reports / users
 
--
+- Deploy client and server projects so all commits will be reflected in production
 
 - Feature:
 
@@ -118,13 +163,15 @@ This application aims to replace traditional paper-based methods in dealerships.
 
 ## Nice-to-haves
 
+- Add image/video upload per report
 - Multiple inspection sheet templates
   - Used Car Inspection
   - Out of Province Inspection
   - Pre Delivery Inspection
 - Add calendar with functionality
-  - Create, delete, change appointments
+  - Create, delete, update appointments
 - Different dashboard layout
   - Widget for calendar
   - Widget for today's appointments
   - Widget for report count
+- Login functionality and authorization
