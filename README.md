@@ -1,6 +1,6 @@
 # Project Title
 
-Manuspec
+ManuSpec
 
 ## Overview
 
@@ -31,7 +31,7 @@ This application aims to replace traditional paper-based methods in dealerships.
 
 - React <img src='./readme-images/react-logo.png' width='30'>
 
-- SASS <img src='./readme-images/sass-logo.png' width='30'> | Tailwind CSS <img src='./readme-images/tailwindcss-logo.png' width='30'>
+- SASS <img src='./readme-images/sass-logo.png' width='30'>
 - Node <img src='./readme-images/node-logo.png' width='30'> | Express <img src='./readme-images/express-logo.png' width='30'>
 - Client libraries:
   - react
@@ -40,7 +40,8 @@ This application aims to replace traditional paper-based methods in dealerships.
   - react-icons
 - Server libraries:
   - knex
-  - express
+- Tools:
+  - Figma (Create Mockups)
 
 ### APIs
 
@@ -80,19 +81,21 @@ This application aims to replace traditional paper-based methods in dealerships.
 ![SelectedCustomer](./readme-images/selectedcustomer.png)
 
 ### Data
-![]()
+
+![](./readme-images/data.png)
 
 ### Endpoints
 
 <details>
   <summary><code>GET /customers<code><summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
+##### Responses
+
   </details>
 
-<details>
+<!-- <details>
   <summary><code>GET /customers/:customerId<code><summary>
 
   ##### Parameters
@@ -126,10 +129,14 @@ This application aims to replace traditional paper-based methods in dealerships.
   ##### Parameters
 
   ##### Responses
-</details>
-
+</details> -->
 
 ### Auth
+
+- JWT Auth
+  - Before adding auth, all API requests will be using a fake user with id 1
+  - Added after core features have first been implemented
+  - Add states for logged in showing different UI (URL/user info)
 
 ### Roadmap
 
@@ -147,15 +154,41 @@ This application aims to replace traditional paper-based methods in dealerships.
 
 - Deploy client and server projects so all commits will be reflected in production
 
-- Feature:
+- Feature: Log In Page
+
+  - User will sign in to use application
 
 - Feature: Home Page
 
-- Feature:
+  - Links to different pages (Reports, Customers, Profile)
 
-- Feature:
+- Feature: Reports Page
 
-- Feature:
+  - Add form to fill in report
+  - Once finished with form, direct to Complete Reports Page
+  - Complete Reports Page will show full form as a PDF File
+
+- Feature: Complete Reports Page
+
+  - Create POST /customers/:id (to save under specific customer)
+  - Add print file option
+  - Add send file to customer option
+
+- Feature: Customers Page
+
+  - GET /customers
+  - Customer name will link to Customer Info Page
+
+- Feature: Customer Info Page
+
+  - GET /customers/:id
+  - Will show full customer info + saved PDF Files from filled in report
+
+- Feature: User Profile Page
+
+  - GET /profile
+  - Will show previous made reports with customer name
+  - Clicking on a previous report, will navigate to Complete Reports Page (Save, Print, Send)
 
 - Bug Fixes
 
