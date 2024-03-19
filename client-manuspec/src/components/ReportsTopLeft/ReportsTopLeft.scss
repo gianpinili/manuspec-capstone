@@ -1,0 +1,49 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.reports {
+  &__top {
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__front-tires {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__check {
+    display: flex;
+  }
+
+  &__headlight-check {
+    display: flex;
+  }
+
+  &__car {
+    transform: rotate(-90deg);
+    width: 20rem;
+    margin: 5rem;
+  }
+
+  &__rear-tires {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rear-lights {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__signal-check {
+    display: flex;
+  }
+
+  &__taillights {
+    display: flex;
+  }
+
+  &__needed {
+    display: flex;
+  }
+}

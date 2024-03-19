@@ -1,0 +1,47 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.reports {
+  &__header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__outline {
+    display: flex;
+  }
+
+  &__green {
+    width: 1rem;
+    height: 1rem;
+    background-color: green;
+
+    &--outline {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__yellow {
+    width: 1rem;
+    height: 1rem;
+    background-color: yellow;
+
+    &--outline {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__red {
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+
+    &--outline {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

@@ -1,6 +1,14 @@
 import "./Login.scss";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  //navigate to dashboard
+  const navigate = useNavigate();
+
+  const goToDashboard = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <>
       <div className="login">
@@ -16,7 +24,9 @@ function Login() {
             className="login__password"
             placeholder="Password"
           />
-          <button className="login__button">Sign In</button>
+          <button onClick={goToDashboard} className="login__button">
+            Sign In
+          </button>
         </form>
       </div>
     </>
