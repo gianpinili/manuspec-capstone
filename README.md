@@ -87,11 +87,25 @@ This application aims to replace traditional paper-based methods in dealerships.
 ### Endpoints
 
 <details>
-  <summary><code>GET /customers<code><summary>
+  <summary><code>GET /customers</code></summary>
 
 ##### Parameters
 
+> | name  | type     | data type | description                   |
+> | ----- | -------- | --------- | ----------------------------- |
+> | id    | required | number    | Specific customer ID          |
+> | name  | required | string    | Customer name                 |
+> | vin   | required | string    | Vehicle Identification Number |
+> | car   | required | string    | Vehicle Make and Model        |
+> | phone | required | number    | Customer Phone Number         |
+> | email | required | string    | Customer Email                |
+
 ##### Responses
+
+> | http status code | response                                                                                                                                         |
+> | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+> | `200`            | `[{ "id": 1, "name": "Quinn Hughes", "VIN": "1FAHP3F20CL266328", "car": "2015 Honda Civic", "phone": 7788982379, "email": "quinn@canucks.com"}]` |
+> | `400`            | `{"code":"400","message":"Bad Request"}`                                                                                                         |
 
   </details>
 
@@ -138,60 +152,38 @@ This application aims to replace traditional paper-based methods in dealerships.
   - Added after core features have first been implemented
   - Add states for logged in showing different UI (URL/user info)
 
-### Roadmap
+## Roadmap
 
 - Create client
-
   - React project with routes and boilerplate pages
-
 - Create server
-
   - Express project with routing, with placeholder 200 responses
-
 - Create migrations
-
 - Create seeds with sample list of customers / reports / users
-
 - Deploy client and server projects so all commits will be reflected in production
-
 - Feature: Log In Page
-
   - User will sign in to use application
-
 - Feature: Home Page
-
   - Links to different pages (Reports, Customers, Profile)
-
 - Feature: Reports Page
-
   - Add form to fill in report
   - Once finished with form, direct to Complete Reports Page
   - Complete Reports Page will show full form as a PDF File
-
 - Feature: Complete Reports Page
-
   - Create POST /customers/:id (to save under specific customer)
   - Add print file option
   - Add send file to customer option
-
 - Feature: Customers Page
-
   - GET /customers
   - Customer name will link to Customer Info Page
-
 - Feature: Customer Info Page
-
   - GET /customers/:id
   - Will show full customer info + saved PDF Files from filled in report
-
 - Feature: User Profile Page
-
   - GET /profile
   - Will show previous made reports with customer name
   - Clicking on a previous report, will navigate to Complete Reports Page (Save, Print, Send)
-
 - Bug Fixes
-
 - Demo
 
 ## Nice-to-haves
