@@ -34,10 +34,10 @@ This application aims to replace traditional paper-based methods in dealerships.
 - SASS <img src='./readme-images/sass-logo.png' width='30'>
 - Node <img src='./readme-images/node-logo.png' width='30'> | Express <img src='./readme-images/express-logo.png' width='30'>
 - Client libraries:
-  - react
   - react-router
   - axios
   - react-icons
+  - jsPDF
 - Server libraries:
   - knex
 - Tools:
@@ -109,45 +109,78 @@ This application aims to replace traditional paper-based methods in dealerships.
 
   </details>
 
-<!-- <details>
-  <summary><code>GET /customers/:customerId<code><summary>
+ <details>
+  <summary><code>GET /customers/:customerId</code></summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
+> | name   | type     | data type | description                   |
+> | ------ | -------- | --------- | ----------------------------- |
+> | id     | required | number    | Specific customer ID          |
+> | name   | required | string    | Customer name                 |
+> | vin    | required | string    | Vehicle Identification Number |
+> | car    | required | string    | Vehicle Make and Model        |
+> | phone  | required | number    | Customer Phone Number         |
+> | email  | required | string    | Customer Email                |
+> | report | required | file      | Customer Service Report       |
+
+##### Responses
+
+> | http status code | response                                                                                                                                                              |
+> | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | `200`            | `[{ "id": 1, "name": "Quinn Hughes", "VIN": "1FAHP3F20CL266328", "car": "2015 Honda Civic", "phone": 7788982379, "email": "quinn@canucks.com", "report": file.pdf }]` |
+> | `400`            | `{"code":"400","message":"Bad Request"}`                                                                                                                              |
+
 </details>
 <details>
-  <summary><code>GET /profile<code><summary>
+  <summary><code>GET /profile</code></summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
+> | name     | type     | data type | description            |
+> | -------- | -------- | --------- | ---------------------- |
+> | id       | required | number    | Specific customer ID   |
+> | name     | required | string    | Customer name          |
+> | tech_num | required | number    | Technician Number      |
+> | report   | required | file      | Created Service Report |
+
+##### Responses
+
+> | http status code | response                                                    |
+> | ---------------- | ----------------------------------------------------------- |
+> | `200`            | `[{ "id": 1, "name": "Quinn Hughes", "report": file.pdf }]` |
+> | `400`            | `{"code":"400","message":"Bad Request"}`                    |
+
 </details>
 <details>
-  <summary><code>POST /customers <code><summary>
+  <summary><code>POST /customers </code></summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
+##### Responses
+
 </details>
 <details>
-  <summary><code>POST /customers/:id<code><summary>
+  <summary><code>POST /customers/:id</code></summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
+##### Responses
+
 </details>
 <details>
-  <summary><code>PUT /customers/:id<code><summary>
+  <summary><code>PUT /customers/:id</code></summary>
 
-  ##### Parameters
+##### Parameters
 
-  ##### Responses
-</details> -->
+##### Responses
+
+</details>
 
 ### Auth
 
 - JWT Auth
+  - Will implement if there is time - currently "Nice to Have"
   - Before adding auth, all API requests will be using a fake user with id 1
   - Added after core features have first been implemented
   - Add states for logged in showing different UI (URL/user info)
