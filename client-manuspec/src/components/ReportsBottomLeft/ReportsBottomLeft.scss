@@ -1,0 +1,11 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.reports {
+  &__bottom {
+    display: flex;
+  }
+  &__top-section {
+    display: flex;
+  }
+}

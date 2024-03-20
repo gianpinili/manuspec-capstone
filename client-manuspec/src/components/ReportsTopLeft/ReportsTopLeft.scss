@@ -3,47 +3,43 @@
 
 .reports {
   &__top {
-    @include desktop {
-      display: flex;
-    }
+    display: flex;
   }
   &__front-tires {
     display: flex;
-    justify-content: space-between;
+    align-items: start;
   }
-  &__check {
-    display: flex;
-  }
-
-  &__headlight-check {
-    display: flex;
-  }
-
   &__car {
-    transform: rotate(-90deg);
-    width: 20rem;
-    margin: 5rem;
-  }
+    rotate: -90deg;
+    width: 15rem;
 
+    margin-left: 5rem;
+  }
   &__rear-tires {
     display: flex;
+    align-items: end;
     justify-content: space-between;
   }
 
-  &__rear-lights {
-    display: flex;
-    justify-content: space-around;
+  &__input-tire {
+    width: 2rem;
   }
 
-  &__signal-check {
+  &__rearlights {
     display: flex;
   }
 
-  &__taillights {
-    display: flex;
+  &__test {
+    width: 11%;
+    height: 0;
   }
 
   &__needed {
     display: flex;
+  }
+
+  &__rotation {
+    display: flex;
+    align-items: center;
   }
 }

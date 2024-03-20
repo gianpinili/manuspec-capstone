@@ -1,34 +1,29 @@
 import React from "react";
+import { Checkbox } from "@mui/material";
 
-function ReportsGuide(props) {
+function ReportsGuide() {
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
   return (
     <div className="reports__outline">
-      {/* Green Report */}
-      <div
-        className="reports__green"
-        onClick={() => props.setGreenClicked(!props.greenClicked)}
-      >
-        {props.greenClicked && <props.FaCheck />}
+      <div className="reports__checkbox">
+        <Checkbox {...label} defaultChecked color="success" />
+        <span>Inspected & Okay</span>
       </div>
-      <span>Inspected & Okay</span>
 
-      {/* Yellow Report */}
-      <div
-        className="reports__yellow"
-        onClick={() => props.setYellowClicked(!props.yellowClicked)}
-      >
-        {props.yellowClicked && <props.FaCheck />}
+      <div className="reports__checkbox">
+        <Checkbox
+          {...label}
+          defaultChecked
+          sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
+        />
+        <span>Requires Future Attention</span>
       </div>
-      <span>Requires Future Attention</span>
 
-      {/* Red Report */}
-      <div
-        className="reports__red"
-        onClick={() => props.setRedClicked(!props.redClicked)}
-      >
-        {props.redClicked && <props.FaCheck />}
+      <div className="reports__checkbox">
+        <Checkbox {...label} defaultChecked color="error" />
+        <span>Requires Immediate Attention</span>
       </div>
-      <span>Requires Immediate Attention</span>
     </div>
   );
 }

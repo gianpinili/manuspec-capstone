@@ -1,0 +1,17 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.reports {
+  &__brakes {
+    width: 10rem;
+  }
+
+  &__front-brakes {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__rear-brakes {
+    display: flex;
+    justify-content: space-between;
+  }
+}
