@@ -4,42 +4,122 @@
 .reports {
   &__top {
     display: flex;
+    flex-direction: column;
   }
   &__front-tires {
     display: flex;
-    align-items: start;
+    margin: 1rem 0;
+    width: 100%;
+    justify-content: space-evenly;
+    // flex-direction: column;
+    // align-items: start;
+  }
+
+  &__front-left {
+    min-width: 5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  &__front-right {
+    width: 100%;
   }
   &__car {
-    rotate: -90deg;
-    width: 15rem;
-
-    margin-left: 5rem;
+    // rotate: -90deg;
+    // width: 15rem;
+    display: none;
+    // margin-left: 5rem;
   }
   &__rear-tires {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
+    margin: 1rem 0;
   }
 
   &__input-tire {
-    width: 2rem;
+    width: 2.25rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__headlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    margin: 0 1rem;
+    width: 100%;
   }
 
   &__rearlights {
     display: flex;
+    flex-direction: column;
+  }
+  &__signals {
+    margin: 1rem 0;
   }
 
-  &__test {
+  &__taillights {
+    margin-bottom: 1rem;
+  }
+
+  &__check {
     width: 11%;
     height: 0;
   }
 
   &__needed {
     display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
   }
 
   &__rotation {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 1rem;
+  }
+  &__lights-text {
+    margin-left: 0.5rem;
+  }
+
+  &__top-comments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__label {
+    margin-bottom: 0.5rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 6rem;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
   }
 }

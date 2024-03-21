@@ -1,0 +1,17 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.reports {
+  &__outline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5rem;
+  }
+
+  &__guide-text {
+    font-weight: 600;
+  }
+}

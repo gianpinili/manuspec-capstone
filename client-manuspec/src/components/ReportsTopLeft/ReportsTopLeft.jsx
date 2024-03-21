@@ -1,5 +1,4 @@
 import "./ReportsTopLeft.scss";
-// import { useState } from "react";
 import Car from "../../assets/images/overhead-inspect.jpg";
 import ReportsTopRight from "../ReportsTopRight/ReportsTopRight";
 import { Checkbox } from "@mui/material";
@@ -131,60 +130,64 @@ function ReportsTopLeft() {
           <div className="reports__rearlights">
             <div className="reports__signals">
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
-              <span>Turn Signals</span>
+              <span className="reports__lights-text">Turn Signals</span>
             </div>
             <div className="reports__taillights">
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
-                className="reports__test"
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
-              <span>Tail Lights </span>
+              <span className="reports__lights-text">Tail Lights </span>
             </div>
           </div>
           <div className="reports__needed">
             <div className="reports__rotation">
-              <Checkbox />
+              <Checkbox className="reports__check" />
               <p className="reports__text">Tire Rotation Needed</p>
             </div>
             <div className="reports__rotation">
-              <Checkbox />
+              <Checkbox className="reports__check" />
               <p className="reports__text">Alignment Needed</p>
             </div>
             <div className="reports__rotation">
-              <Checkbox />
+              <Checkbox className="reports__check" />
               <p className="reports__text">Wheel Balance Needed</p>
             </div>
           </div>
           <div className="reports__top-comments">
             <label htmlFor="comments" className="reports__label">
               Comments:
-              <textarea name="comments" id=""></textarea>
             </label>
+            <textarea
+              className="reports__textarea"
+              name="comments"
+              id=""
+            ></textarea>
           </div>
         </div>
         <ReportsTopRight />

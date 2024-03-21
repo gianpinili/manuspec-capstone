@@ -2,16 +2,22 @@
 @use "../../styles/partials/variables" as *;
 
 .reports {
-  &__brakes {
-    width: 10rem;
-  }
-
   &__front-brakes {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
   }
   &__rear-brakes {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
+  }
+
+  &__brakes {
+    display: none;
+  }
+
+  &__subtext {
+    margin-bottom: 0.5rem;
   }
 }

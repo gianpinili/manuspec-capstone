@@ -10,14 +10,17 @@ function ReportsTopRight() {
         <p className="reports__text">Operating Systems</p>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -25,14 +28,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -40,14 +46,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -55,14 +64,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -70,14 +82,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -85,14 +100,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -100,14 +118,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -115,14 +136,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -130,14 +154,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -145,14 +172,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -160,14 +190,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -177,14 +210,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -192,14 +228,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -207,14 +246,17 @@ function ReportsTopRight() {
         </div>
         <div className="reports__group">
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
           />
           <Checkbox
+            className="reports__check"
             {...label}
             sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
           />
@@ -223,8 +265,12 @@ function ReportsTopRight() {
         <div className="reports__top-comments">
           <label htmlFor="comments" className="reports__label">
             Comments:
-            <textarea name="comments" id=""></textarea>
           </label>
+          <textarea
+            className="reports__textarea"
+            name="comments"
+            id=""
+          ></textarea>
         </div>
       </div>
     </>

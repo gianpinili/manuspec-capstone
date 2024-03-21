@@ -11,7 +11,7 @@ function ReportsBottomRight() {
           <p className="reports__subtitle">Brake System</p>
           <div className="reports__front-brakes">
             <div className="reports__front-left">
-              <p>Left Front</p>
+              <p className="reports__subtext">Left Front</p>
               <div>
                 <Checkbox
                   {...label}
@@ -35,7 +35,7 @@ function ReportsBottomRight() {
               </div>
             </div>
             <div className="reports__front-right">
-              <p>Right Front</p>
+              <p className="reports__subtext">Right Front</p>
               <div>
                 <Checkbox
                   {...label}
@@ -62,7 +62,7 @@ function ReportsBottomRight() {
           <img src={Brakes} className="reports__brakes" alt="" />
           <div className="reports__rear-brakes">
             <div className="reports__rear-left">
-              <p>Left Rear</p>
+              <p className="reports__subtext">Left Rear</p>
               <div>
                 <Checkbox
                   {...label}
@@ -86,7 +86,7 @@ function ReportsBottomRight() {
               </div>
             </div>
             <div className="reports__rear-left">
-              <p>Right Rear</p>
+              <p className="reports__subtext">Right Rear</p>
               <div>
                 <Checkbox
                   {...label}
@@ -114,8 +114,12 @@ function ReportsBottomRight() {
           <div className="reports__top-comments">
             <label htmlFor="comments" className="reports__label">
               Comments:
-              <textarea name="comments" id=""></textarea>
             </label>
+            <textarea
+              className="reports__textarea"
+              name="comments"
+              id=""
+            ></textarea>
           </div>
         </div>
       </div>

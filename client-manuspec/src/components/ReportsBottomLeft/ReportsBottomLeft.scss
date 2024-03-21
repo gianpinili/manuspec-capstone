@@ -4,8 +4,10 @@
 .reports {
   &__bottom {
     display: flex;
+    flex-direction: column;
   }
   &__top-section {
     display: flex;
+    flex-direction: column;
   }
 }

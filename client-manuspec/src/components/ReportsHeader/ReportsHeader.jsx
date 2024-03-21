@@ -4,40 +4,56 @@ function ReportsHeader() {
   return (
     <div className="reports__header">
       <div className="reports__left">
-        <div>
-          <label htmlFor="">Name: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Name:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
-        <div>
-          <label htmlFor="">RO #: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            RO #:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
-        <div>
-          <label htmlFor="">Email: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Email:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
       </div>
       <div className="reports__middle">
-        <div>
-          <label htmlFor="">Year/Model: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Year/Model:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
-        <div>
-          <label htmlFor="">Odometer: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Odometer:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
-        <div>
-          <label htmlFor="">Phone: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Phone:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
       </div>
       <div className="reports__right">
-        <div>
-          <label htmlFor="">Date: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            Date:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
-        <div>
-          <label htmlFor="">VIN: </label>
+        <div className="reports__fill">
+          <label className="reports__header-label" htmlFor="">
+            VIN:{" "}
+          </label>
           <input type="text" className="reports__input" />
         </div>
       </div>

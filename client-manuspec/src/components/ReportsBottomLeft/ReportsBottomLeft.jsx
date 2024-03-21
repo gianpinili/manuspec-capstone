@@ -13,14 +13,17 @@ function ReportsBottomLeft() {
               <p className="reports__text">Wipers</p>
               <div className="reports__group">
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
                 />
@@ -28,14 +31,17 @@ function ReportsBottomLeft() {
               </div>
               <div className="reports__group">
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
                 />
@@ -43,14 +49,17 @@ function ReportsBottomLeft() {
               </div>
               <div className="reports__group">
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
                 />
@@ -61,14 +70,17 @@ function ReportsBottomLeft() {
               <p className="reports__text">Battery</p>
               <div className="reports__group">
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
                 />
@@ -76,14 +88,17 @@ function ReportsBottomLeft() {
               </div>
               <div className="reports__group">
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
                 />
                 <Checkbox
+                  className="reports__check"
                   {...label}
                   sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
                 />
@@ -94,21 +109,28 @@ function ReportsBottomLeft() {
           <div className="reports__top-comments">
             <label htmlFor="comments" className="reports__label">
               Comments:
-              <textarea name="comments" id=""></textarea>
             </label>
+            <textarea
+              className="reports__textarea"
+              name="comments"
+              id=""
+            ></textarea>
           </div>
           <div className="reports__bot-section">
             <p className="reports__text">Vital Fluids</p>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -116,14 +138,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -131,14 +156,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -146,14 +174,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -161,14 +192,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -176,14 +210,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -191,14 +228,17 @@ function ReportsBottomLeft() {
             </div>
             <div className="reports__group">
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "green", "&.Mui-checked": { color: "green" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "yellow", "&.Mui-checked": { color: "yellow" } }}
               />
               <Checkbox
+                className="reports__check"
                 {...label}
                 sx={{ color: "red", "&.Mui-checked": { color: "red" } }}
               />
@@ -207,8 +247,12 @@ function ReportsBottomLeft() {
             <div className="reports__top-comments">
               <label htmlFor="comments" className="reports__label">
                 Comments:
-                <textarea name="comments" id=""></textarea>
               </label>
+              <textarea
+                className="reports__textarea"
+                name="comments"
+                id=""
+              ></textarea>
             </div>
           </div>
         </div>
