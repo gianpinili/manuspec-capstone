@@ -5,14 +5,30 @@
   &__top {
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
+
+  &__top-left {
+    @include desktop {
+      width: 120%;
+      margin-right: 3rem;
+    }
+  }
+  &__top-right {
+    @include desktop {
+      width: 100%;
+    }
+  }
+
   &__front-tires {
     display: flex;
     margin: 1rem 0;
     width: 100%;
     justify-content: space-evenly;
-    // flex-direction: column;
-    // align-items: start;
   }
 
   &__front-left {
@@ -23,12 +39,26 @@
 
   &__front-right {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   &__car {
     // rotate: -90deg;
     // width: 15rem;
     display: none;
     // margin-left: 5rem;
+
+    @include tablet {
+      display: block;
+      rotate: -90deg;
+      width: 15rem;
+      margin-left: 14rem;
+    }
+
+    @include desktop {
+      margin-left: 11rem;
+    }
   }
   &__rear-tires {
     display: flex;
@@ -55,18 +85,42 @@
     padding-top: 8rem;
     margin: 0 1rem;
     width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      padding: 0 0 3rem 0;
+      justify-content: center;
+    }
   }
 
   &__rearlights {
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__signals {
     margin: 1rem 0;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__taillights {
     margin-bottom: 1rem;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
   }
 
   &__check {
@@ -78,12 +132,21 @@
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
   &__rotation {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+
+    @include tablet {
+      justify-content: space-evenly;
+    }
   }
 
   &__subtitle {
@@ -121,5 +184,6 @@
 
   &__text {
     line-height: 1.5;
+    text-transform: uppercase;
   }
 }

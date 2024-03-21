@@ -7,7 +7,7 @@ function ReportsTopRight() {
   return (
     <>
       <div className="reports__top-right">
-        <p className="reports__text">Operating Systems</p>
+        <p className="reports__right-text">Operating Systems</p>
         <div className="reports__group">
           <Checkbox
             className="reports__check"

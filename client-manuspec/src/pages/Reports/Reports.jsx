@@ -17,6 +17,13 @@ function Reports() {
         <ReportsTopLeft />
 
         <ReportsBottomLeft />
+
+        <div className="reports__technician">
+          <p className="reports__text">Technician: </p>
+          <input type="text" className="reports__tech-input" />
+        </div>
+
+        <button className="reports__finish">Finish</button>
       </form>
     </>
   );

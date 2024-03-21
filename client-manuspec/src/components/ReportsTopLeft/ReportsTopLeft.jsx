@@ -13,7 +13,7 @@ function ReportsTopLeft() {
           <p className="reports__subtitle">Body Condition | Lights | Tires</p>
           <div className="reports__front-tires">
             <div className="reports__front-left">
-              <p>Left Front</p>
+              <p className="reports__left-text">Left Front</p>
               <div>
                 <Checkbox
                   {...label}
@@ -52,7 +52,7 @@ function ReportsTopLeft() {
               <span>Headlights</span>
             </div>
             <div className="reports__front-right">
-              <p>Right Front</p>
+              <p className="reports__left-text">Right Front</p>
               <div>
                 <Checkbox
                   {...label}
@@ -79,7 +79,7 @@ function ReportsTopLeft() {
           <img src={Car} className="reports__car" alt="" />
           <div className="reports__rear-tires">
             <div className="reports__rear-left">
-              <p>Left Rear</p>
+              <p className="reports__left-text">Left Rear</p>
               <div>
                 <Checkbox
                   {...label}
@@ -103,7 +103,7 @@ function ReportsTopLeft() {
               </div>
             </div>
             <div className="reports__rear-left">
-              <p>Right Rear</p>
+              <p className="reports__left-text">Right Rear</p>
               <div>
                 <Checkbox
                   {...label}
@@ -168,15 +168,15 @@ function ReportsTopLeft() {
           <div className="reports__needed">
             <div className="reports__rotation">
               <Checkbox className="reports__check" />
-              <p className="reports__text">Tire Rotation Needed</p>
+              <p className="reports__text-needed">Tire Rotation Needed</p>
             </div>
             <div className="reports__rotation">
               <Checkbox className="reports__check" />
-              <p className="reports__text">Alignment Needed</p>
+              <p className="reports__text-needed">Alignment Needed</p>
             </div>
             <div className="reports__rotation">
               <Checkbox className="reports__check" />
-              <p className="reports__text">Wheel Balance Needed</p>
+              <p className="reports__text-needed">Wheel Balance Needed</p>
             </div>
           </div>
           <div className="reports__top-comments">

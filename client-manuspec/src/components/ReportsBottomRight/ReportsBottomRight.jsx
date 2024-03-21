@@ -10,7 +10,7 @@ function ReportsBottomRight() {
         <div className="reports__bot-right">
           <p className="reports__subtitle">Brake System</p>
           <div className="reports__front-brakes">
-            <div className="reports__front-left">
+            <div className="reports__frontleft">
               <p className="reports__subtext">Left Front</p>
               <div>
                 <Checkbox
@@ -34,7 +34,7 @@ function ReportsBottomRight() {
                 <span className="reports__subtext">20% or less</span>
               </div>
             </div>
-            <div className="reports__front-right">
+            <div className="reports__frontright">
               <p className="reports__subtext">Right Front</p>
               <div>
                 <Checkbox
@@ -59,7 +59,9 @@ function ReportsBottomRight() {
               </div>
             </div>
           </div>
-          <img src={Brakes} className="reports__brakes" alt="" />
+          <div className="reports__image">
+            <img src={Brakes} className="reports__brakes" alt="" />
+          </div>
           <div className="reports__rear-brakes">
             <div className="reports__rear-left">
               <p className="reports__subtext">Left Rear</p>

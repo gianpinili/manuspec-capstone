@@ -5,9 +5,27 @@
   &__bottom {
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
   &__top-section {
     display: flex;
     flex-direction: column;
+  }
+
+  &__bottom-left {
+    @include desktop {
+      width: 120%;
+      margin-right: 3rem;
+    }
+  }
+
+  &__bottom-right {
+    @include desktop {
+      width: 100%;
+    }
   }
 }
