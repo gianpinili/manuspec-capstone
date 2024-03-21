@@ -13,5 +13,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Welcome to the server. Running on port", PORT);
+  console.log("Welcome to the ManuSpec server. Running on port", PORT);
 });
