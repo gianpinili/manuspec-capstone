@@ -72,6 +72,7 @@
     border: none;
     background-color: transparent;
     border-bottom: 1px solid black;
+    line-height: 1.5;
 
     &:focus {
       outline: none;
@@ -176,6 +177,7 @@
     border: none;
     border-radius: 8px;
     padding: 0.5rem;
+    line-height: 1.5;
 
     &:focus {
       outline: none;
