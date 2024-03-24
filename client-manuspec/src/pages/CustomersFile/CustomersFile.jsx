@@ -8,12 +8,12 @@ function CustomersFile() {
       <div className="customer-info">
         <div className="customer-info__left">
           <div className="customer-info__image">
-            <img src="" alt="" />
+            <div className="customer-info__img"></div>
           </div>
           <p className="customer-info__name">Rick Tocchet</p>
         </div>
         <div className="customer-info__middle">
-          <p className="customer-info__number">123-456-7890</p>
+          <p className="customer-info__number">604-456-7890</p>
           <p className="customer-info__email">customer@email.com</p>
         </div>
         <div className="customer-info__right">

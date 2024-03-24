@@ -9,8 +9,13 @@ function Profile() {
           <div className="profile__image"></div>
           <p className="profile__name">Ian Pinili</p>
         </div>
-        <div className="profile__middle"></div>
-        <div className="profile__right"></div>
+        <div className="profile__middle">
+          <p className="profile__number">11975</p>
+          <p className="profile__email">gianpinili@gmail.com</p>
+        </div>
+        <div className="profile__right">
+          <p className="profile__job">Red Seal Automotive Technician</p>
+        </div>
       </div>
     </>
   );

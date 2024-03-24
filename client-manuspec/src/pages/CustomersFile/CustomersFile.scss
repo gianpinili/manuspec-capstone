@@ -3,16 +3,80 @@
 
 .customer-info {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  gap: 0.5rem;
+  background-color: #eaeaea;
 
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    margin: 1rem 3rem;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
+  &__left {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__middle {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__right {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__name {
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__number {
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__vin {
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      margin-bottom: 1rem;
+    }
   }
 }
