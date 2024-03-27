@@ -1,7 +1,6 @@
 module.exports = [
   {
-    id: 1,
-    customer_id: 1,
+    customer_info_id: 1,
     profile_name: "Ian Pinili",
     number: "(778)-855-3645",
     tech_number: "11975",
@@ -9,8 +8,7 @@ module.exports = [
     position: "Automotive Technician",
   },
   {
-    id: 2,
-    customer_id: 2,
+    customer_info_id: 2,
     profile_name: "Christi Gentle",
     number: "(604)-123-4567",
     tech_number: "10244",
@@ -18,8 +16,7 @@ module.exports = [
     position: "Automotive Technician",
   },
   {
-    id: 3,
-    customer_id: 3,
+    customer_info_id: 3,
     profile_name: "George Coop",
     number: "(604)-653-6542",
     tech_number: "10016",
@@ -27,8 +24,7 @@ module.exports = [
     position: "Automotive Technician",
   },
   {
-    id: 4,
-    customer_id: 4,
+    customer_info_id: 4,
     profile_name: "Jack E. Chan",
     number: "(604)-658-5441",
     tech_number: "00132",
@@ -36,8 +32,7 @@ module.exports = [
     position: "Automotive Technician Apprentice",
   },
   {
-    id: 5,
-    customer_id: 5,
+    customer_info_id: 5,
     profile_name: "Russell Nguyen",
     number: "(604)-564-7898",
     tech_number: "11554",
