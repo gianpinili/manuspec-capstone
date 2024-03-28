@@ -1,19 +1,31 @@
 import "./CustomerList.scss";
 import { Link } from "react-router-dom";
 
-function CustomerList() {
+function CustomerList({ customers }) {
   return (
     <>
-      <div className="customers__info">
-        <Link className="customers__link" to="/customers/:id">
-          {" "}
-          <p className="customers__name">Quinn Hughes</p>
-        </Link>
-        <p className="customers__vin">1FAHP3F20CL266328</p>
-        <p className="customers__vehicle">2018 Subaru Impreza</p>
-        <p className="customers__number">123-456-7890</p>
-        <p className="customers__email">customer@email.com</p>
-      </div>
+      {customers.map((customer) => (
+        <div className="customers__info" key={customer.id}>
+          <Link className="customers__link" to="/customers/:id">
+            {" "}
+            <p className="customers__name" key={customer.name}>
+              {customer.name}
+            </p>
+          </Link>
+          <p className="customers__vin" key={customer.vin}>
+            {customer.vin}
+          </p>
+          <p className="customers__vehicle" key={customer.car}>
+            {customer.car}
+          </p>
+          <p className="customers__number" key={customer.number}>
+            {customer.number}
+          </p>
+          <p className="customers__email" key={customer.email}>
+            {customer.email}
+          </p>
+        </div>
+      ))}
     </>
   );
 }
