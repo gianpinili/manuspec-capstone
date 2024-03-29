@@ -6,7 +6,7 @@ function CustomerList({ customers }) {
     <>
       {customers.map((customer) => (
         <div className="customers__info" key={customer.id}>
-          <Link className="customers__link" to="/customers/:id">
+          <Link className="customers__link" to={`/customers/${customer.id}`}>
             {" "}
             <p className="customers__name" key={customer.name}>
               {customer.name}

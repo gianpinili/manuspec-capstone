@@ -8,6 +8,7 @@ function Customers() {
 
   const [customers, setCustomers] = useState([]);
 
+  //get all customers
   useEffect(() => {
     const getCustomers = async () => {
       const response = await axios.get(dataUrl);
