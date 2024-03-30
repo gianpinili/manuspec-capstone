@@ -60,17 +60,18 @@
 
     @include desktop {
       padding: 0 2.5rem;
-
-      &:hover {
-        border-bottom: 1px solid black;
-        padding-bottom: 0.5rem;
-      }
     }
   }
 
   &__link {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid orange;
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__button {
@@ -85,4 +86,8 @@
       opacity: 0.8;
     }
   }
+}
+
+.active {
+  color: #ee9986;
 }

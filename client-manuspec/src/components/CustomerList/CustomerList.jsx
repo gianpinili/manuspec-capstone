@@ -18,8 +18,8 @@ function CustomerList({ customers }) {
           <p className="customers__vehicle" key={customer.car}>
             {customer.car}
           </p>
-          <p className="customers__number" key={customer.number}>
-            {customer.number}
+          <p className="customers__number" key={customer.phone}>
+            {customer.phone}
           </p>
           <p className="customers__email" key={customer.email}>
             {customer.email}

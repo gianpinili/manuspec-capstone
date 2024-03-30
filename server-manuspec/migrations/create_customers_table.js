@@ -13,8 +13,8 @@ exports.up = function (knex) {
     .createTable("customer_files", function (table) {
       table.increments("id").primary();
       table.integer("customer_info_id").unsigned().notNullable();
-      table.foreign("customer_info_id").references("customers.id");
-      table.string("file_name").notNullable();
+      // table.foreign("customer_info_id").references("customers.id");
+      table.string("customer_file").notNullable();
       table.dateTime("date_created").defaultTo(knex.fn.now());
       table.dateTime("updated_at").defaultTo(knex.fn.now());
       table.dateTime("created_at").defaultTo(knex.fn.now());

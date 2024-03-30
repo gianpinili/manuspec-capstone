@@ -1,11 +1,36 @@
 import "./Login.scss";
 import { useNavigate } from "react-router-dom";
+import Alert from "@mui/material/Alert";
+import Snackbar from "@mui/material/Snackbar";
+import { useState } from "react";
 
 function Login() {
   //navigate to dashboard
   const navigate = useNavigate();
 
-  const goToDashboard = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const goToDashboard = (event) => {
+    event.preventDefault();
+
+    //form validation
+    if (document.querySelector(".login__username").value === "") {
+      setOpen(true);
+      return;
+    }
+
+    if (document.querySelector(".login__password").value === "") {
+      setOpen(true);
+      return;
+    }
     navigate("/dashboard");
   };
 
@@ -28,7 +53,16 @@ function Login() {
             Sign In
           </button>
         </form>
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+          <Alert onClose={handleClose} severity="error">
+            Please enter the correct username and password.
+          </Alert>
+        </Snackbar>
       </div>
+      <section className="login__account">
+        <p className="login__user-text">Username: admin</p>
+        <p className="login__user-pass">Password: pass</p>
+      </section>
     </>
   );
 }
