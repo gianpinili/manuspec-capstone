@@ -21,17 +21,17 @@ function Login() {
   const goToDashboard = (event) => {
     event.preventDefault();
 
-    //form validation
-    if (document.querySelector(".login__username").value === "") {
-      setOpen(true);
-      return;
-    }
+    const username = document.querySelector(".login__username").value;
+    const password = document.querySelector(".login__password").value;
 
-    if (document.querySelector(".login__password").value === "") {
+    //form validation
+    if (username === "admin" && password === "pass") {
+      // Navigate to dashboard
+      navigate("/dashboard");
+    } else {
+      // Show error message
       setOpen(true);
-      return;
     }
-    navigate("/dashboard");
   };
 
   return (

@@ -21,6 +21,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: grey;
+    margin-bottom: 0.5rem;
 
     @include tablet {
       width: 80px;
@@ -32,30 +33,47 @@
   &__left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @include desktop {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__name {
-    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
 
   &__middle {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    @include desktop {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__num {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    @include desktop {
+      margin-bottom: 1rem;
+    }
   }
 
   &__number {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+
+    @include desktop {
+      margin-bottom: 1rem;
+    }
   }
   &__email {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 }

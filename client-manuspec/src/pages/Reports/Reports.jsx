@@ -10,6 +10,7 @@ import ReportsBottomLeft from "../../components/ReportsBottomLeft/ReportsBottomL
 function Reports() {
   const formRef = useRef(null);
 
+  // Generate PDF
   function generatePDF(event) {
     event.preventDefault();
 
@@ -35,6 +36,12 @@ function Reports() {
     });
   }
 
+  //Print page
+  const printPage = (event) => {
+    event.preventDefault();
+    window.print();
+  };
+
   return (
     <>
       <form ref={formRef} className="reports">
@@ -47,9 +54,15 @@ function Reports() {
           <p className="reports__text">Technician: </p>
           <input type="text" className="reports__tech-input" />
         </div>
-        <button className="reports__finish" onClick={generatePDF}>
-          Finish
-        </button>
+        <div className="reports__buttons">
+          <button className="reports__finish" onClick={generatePDF}>
+            Finish
+          </button>
+          <button className="reports__save">Save</button>
+          <button onClick={printPage} className="reports__print">
+            Print
+          </button>
+        </div>
       </form>
     </>
   );

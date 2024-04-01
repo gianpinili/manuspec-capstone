@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.scss";
+import ProfileList from "../../components/ProfileList/ProfileList";
 
 function Profile() {
   return (
@@ -18,6 +19,7 @@ function Profile() {
           <p className="profile__job">Automotive Technician</p>
         </div>
       </div>
+      <ProfileList />
     </>
   );
 }

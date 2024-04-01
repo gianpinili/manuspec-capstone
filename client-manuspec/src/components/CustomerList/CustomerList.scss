@@ -24,28 +24,49 @@
   &__name {
     margin-bottom: 0.4rem;
     color: rgb(57, 57, 57);
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      text-decoration: underline;
+      color: #ee9a87;
+    }
+
+    @include desktop {
+      width: 8rem;
     }
   }
 
   &__vin {
     margin-bottom: 0.4rem;
     color: rgb(57, 57, 57);
+
+    @include desktop {
+      width: 12rem;
+    }
   }
   &__vehicle {
     margin-bottom: 0.4rem;
     color: rgb(57, 57, 57);
+
+    @include desktop {
+      width: 13rem;
+    }
   }
 
   &__number {
     margin-bottom: 0.4rem;
     color: rgb(57, 57, 57);
+
+    @include desktop {
+      width: 10rem;
+    }
   }
 
   &__email {
     margin-bottom: 0.4rem;
     color: rgb(57, 57, 57);
+
+    @include desktop {
+      width: 14rem;
+    }
   }
 }

@@ -38,8 +38,11 @@ This application aims to replace traditional paper-based methods in dealerships.
   - axios
   - react-icons
   - jsPDF
+  - Material UI
 - Server libraries:
   - knex
+- Database
+  - MySQL
 - Tools:
   - Figma (Create Mockups)
 
@@ -53,7 +56,6 @@ This application aims to replace traditional paper-based methods in dealerships.
   - Login (Sign in to use)
 - Dashboard
   - Create Report
-    - Finished Report
   - List of Customer History
     - Selected Customer
   - User Profile

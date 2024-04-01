@@ -1,5 +1,4 @@
 import "./CustomerFiles.scss";
-// import { Link } from "react-router-dom";
 import Document from "../../assets/documents/service-inspection.pdf";
 
 function CustomerFiles() {
