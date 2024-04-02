@@ -73,9 +73,13 @@
     }
   }
 
+  &__card {
+    text-decoration: none;
+    position: relative;
+  }
+
   &__reports {
     display: flex;
-
     margin-top: 3rem;
   }
 
@@ -84,10 +88,14 @@
 
     @include desktop {
       display: flex;
-      color: green;
+      color: white;
+      text-decoration: none;
+      justify-content: center;
       position: absolute;
-      right: 12rem;
-      top: 24rem;
+      bottom: 2rem;
+      left: 4.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
     }
   }
 }

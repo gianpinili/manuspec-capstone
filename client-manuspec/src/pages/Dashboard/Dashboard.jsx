@@ -20,22 +20,20 @@ function Dashboard() {
           </Link>
         </div>
         <div className="dashboard__cards">
-          <Link to={"/reports"}>
+          <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image1} alt="" />
+            <p className="dashboard__text">Service Inspection</p>
           </Link>
-          <Link to={"/reports"}>
+          <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image2} alt="" />
+            <p className="dashboard__text">Used Car Inspection</p>
           </Link>
-          <Link to={"/reports"}>
+          <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image3} alt="" />
+            <p className="dashboard__text">Out of Province Inspection</p>
           </Link>
         </div>
       </div>
-      {/* <div className="dashboard__reports">
-        <p className="dashboard__text">Service Report</p>
-        <p className="dashboard__text">Service Report</p>
-        <p className="dashboard__text">Service Report</p>
-      </div> */}
     </>
   );
 }
