@@ -22,15 +22,15 @@ function Dashboard() {
         <div className="dashboard__cards">
           <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image1} alt="" />
-            <p className="dashboard__text">Service Inspection</p>
+            <p className="dashboard__text">Service</p>
           </Link>
           <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image2} alt="" />
-            <p className="dashboard__text">Used Car Inspection</p>
+            <p className="dashboard__text">Used Cars</p>
           </Link>
           <Link className="dashboard__card" to={"/reports"}>
             <img className="dashboard__image" src={image3} alt="" />
-            <p className="dashboard__text">Out of Province Inspection</p>
+            <p className="dashboard__text">Out of Province</p>
           </Link>
         </div>
       </div>
